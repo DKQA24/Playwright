@@ -23,13 +23,12 @@ await page.waitForTimeout(5000);
       const fs = require('fs');
 const email = fs.readFileSync('used_email.txt', 'utf-8');
 
-/////////////////////////// THIS IS TEST LINE
+/////////////////DILAWAR KHAN
 
 
     await page.getByTestId('forget-password-email-input-field').fill(email);
     await page.getByTestId('forget-password-submit-btn').click();
 
-    //add here code to get the verification code from MailPit
 await page.waitForTimeout(5000);
     const code = await getVerificationCode(email);
   console.log('Extracted code:', code);
