@@ -19,7 +19,7 @@ await page.waitForTimeout(5000);
 
 
     await expect (page.getByAltText('OneStream Logo')).toBeVisible();
-//////////////////////////////
+///////////////////////////
       const fs = require('fs');
 const email = fs.readFileSync('used_email.txt', 'utf-8');
 
