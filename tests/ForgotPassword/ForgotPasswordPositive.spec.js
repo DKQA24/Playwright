@@ -23,7 +23,7 @@ await page.waitForTimeout(5000);
       const fs = require('fs');
 const email = fs.readFileSync('used_email.txt', 'utf-8');
 
-/////////////////DILAWAR KHAN
+//////////////
 
 
     await page.getByTestId('forget-password-email-input-field').fill(email);
