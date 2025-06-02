@@ -28,10 +28,10 @@ testMatch: '**/*.spec.js',
   
   //browserName: 'webkit' // for safari browser
 
-
+ storageState: 'user.json',
   },
 
-  
+  globalSetup: require.resolve('./global-setup.js'), // Path to your global setup file
 
 
 
