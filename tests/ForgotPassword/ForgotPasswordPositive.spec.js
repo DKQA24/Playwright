@@ -50,8 +50,15 @@ for (let i = 0; i < code.length; i++) {
     await page.getByPlaceholder('Re-enter new password').fill('2007Axio!#');
     await page.getByRole('button', { name: 'Reset Password' }).click();
 
-  await page.waitForTimeout(5000);
-  expect(page).toHaveURL('https://app-development.onestream.live/login');
+    const toast = page.getByText(/password reset successfully/i);
+   await expect(toast).toBeVisible();           
+    console.log(await toast.innerText());        
+
+    
+
+    await page.waitForTimeout(5000);
+    expect(page).toHaveURL('https://app-development.onestream.live/login');
+  
 
 
 });

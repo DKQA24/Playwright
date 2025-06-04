@@ -28,10 +28,11 @@ testMatch: '**/*.spec.js',
   
   //browserName: 'webkit' // for safari browser
 
- storageState: 'user.json',
+// storageState: 'user.json', //uncomment this line to use the storage state file for authentication in all test files
+
   },
 
-  globalSetup: require.resolve('./global-setup.js'), // Path to your global setup file
+ // globalSetup: require.resolve('./global-setup.js'), // Path to your global setup file
 
 
 
